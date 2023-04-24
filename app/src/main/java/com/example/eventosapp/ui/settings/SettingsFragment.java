@@ -182,7 +182,7 @@ public class SettingsFragment extends Fragment implements LocationListener {
             }else {
                 try {
                 eventos=new Eventos(theme,date,exposerName,eventos.getEstado());
-                eventos.setIdLocation(idLocation);
+                eventos.setIdLocation(1);
                 settingsViewModel.insert(eventos);
 
                 settingsViewModel.insertGPSLocation(new GPSLocation(ubicacionActual.getLatitude(), ubicacionActual.getLongitude()));
@@ -349,8 +349,7 @@ public class SettingsFragment extends Fragment implements LocationListener {
 
         ubicacionActual = new GPSLocation(latitude, longitude);
 
-        TextInputLayout ubicacion=binding.tilUbicacion;
-        ubicacion.getEditText().setText(latitude + ","+longitude);
+        binding.tilUbicacion.getEditText().setText(latitude + ","+longitude);
 
         System.out.println("ME ESTOY EJECUTANDO AQUI ESTOY");
 
