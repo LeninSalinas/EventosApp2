@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reflow.ReflowFragment">
+
+    <ImageView
+        android:id="@+id/imageEmptyEve"
+        android:layout_width="241dp"
+        android:layout_height="201dp"
+        android:contentDescription="@string/no_existen_eventos"
+        android:src="@drawable/baseline_event_busy_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rc_reflow" />
+
+    <TextView
+        android:id="@+id/txtwarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:gravity="center"
+        android:text="@string/precaucion_msg"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imageEmptyEve"
+        app:layout_constraintStart_toStartOf="@+id/imageEmptyEve"
+        app:layout_constraintTop_toBottomOf="@+id/imageEmptyEve" />
+
+    <TextView
+        android:id="@+id/tvSinResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/no_results"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Buscador" />
+
+    <SearchView
+        android:id="@+id/Buscador"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Busca lo que quieras..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_reflow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Buscador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

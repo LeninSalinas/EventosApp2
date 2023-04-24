@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consUpdate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="370dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crconf" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilThemeA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tema del evento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFechaEventoA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilThemeA"
+        app:layout_constraintStart_toStartOf="@+id/tilThemeA"
+        app:layout_constraintTop_toBottomOf="@+id/tilThemeA">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha del evento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/actExposer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/nombre_del_expositor"
+        app:layout_constraintEnd_toEndOf="@+id/tilFechaEventoA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tilFechaEventoA"
+        app:layout_constraintTop_toBottomOf="@+id/tilFechaEventoA" />
+
+    <Spinner
+        android:id="@+id/spStatusEventA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/actExposer"
+        app:layout_constraintStart_toStartOf="@+id/actExposer"
+        app:layout_constraintTop_toBottomOf="@+id/actExposer" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_activity_actualizar_eventos"
+        app:layout_constraintEnd_toEndOf="@+id/spStatusEventA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spStatusEventA"
+        app:layout_constraintTop_toBottomOf="@+id/tilUbicacionA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escoga el estado del evento"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/spStatusEventA"
+        app:layout_constraintStart_toStartOf="@+id/spStatusEventA" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUbicacionA"
+        android:layout_width="299dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/spStatusEventA"
+        app:layout_constraintTop_toBottomOf="@+id/spStatusEventA">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ubicacion_del_evento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imgUbicacion"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/tilUbicacionA"
+        app:layout_constraintStart_toEndOf="@+id/tilUbicacionA"
+        app:layout_constraintTop_toTopOf="@+id/tilUbicacionA"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

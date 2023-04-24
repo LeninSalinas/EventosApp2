@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/end_event"
+        android:title="Finalizar evento" />
+    <item
+        android:id="@+id/del_only_one_event"
+        android:title="Eliminar evento" />
+</menu>

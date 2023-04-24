@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">EventosApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings"></string>
+
+    <string-array name="estados_crear">
+        <item>Calendarizado</item>
+        <item>Por iniciar</item>
+        <item>Iniciado</item>
+    </string-array>
+
+    <string-array name="estados_finalizar">
+        <item>Calendarizado</item>
+        <item>Por iniciar</item>
+        <item>Iniciado</item>
+        <item>Finalizado</item>
+    </string-array>
+
+    <string name="menu_transform"></string>
+    <string name="menu_reflow"></string>
+    <string name="menu_slideshow"></string>
+    <string name="menu_settings"></string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+    <string name="search_title">Buscar...</string>
+    <string name="search_hint">Buscar...</string>
+    <string name="modificar">Modificar</string>
+    <string name="btn_guardar_evento">Guarda el evento</string>
+    <string name="btn_crear_evento">crea el evento</string>
+    <string name="msg">Evento %1$s Creado</string>
+    <string name="error_msg">Error: Por favor llene los campos</string>
+    <string name="title_update_event">Actualizar Datos</string>
+    <string name="title_create_event">Crea un evento</string>
+    <string name="precaucion_msg">Todavia no se a creado ningun evento\n<u><font color="#0000FF">Crea un evento</font></u></string>
+    <string name="no_existen_eventos_creados">No existen eventos creados</string>
+    <string name="del_all_event">Estas segur@ de eliminar todos los eventos?</string>
+    <string name="delete_dialog_title">Confirmacion</string>
+    <string name="ok">Ok</string>
+    <string name="confirmed_msg">Los eventos han sido eliminados correctamente</string>
+    <string name="cancel">Cancelar</string>
+    <string name="no_existen_eventos">No existen eventos</string>
+    <string name="menu_del_all">Borrar todos los eventos</string>
+    <string name="title_activity_actualizar_eventos">Actualizar Evento</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="lista_de_eventos">Lista de eventos</string>
+    <string name="lista_de_eventos_finalizados">Lista de eventos finalizados</string>
+    <string name="delete_dialog_message">¿Desea eliminar este elemento?</string>
+    <string name="elim_event">Se a eliminado correctamente</string>
+    <string name="no_results">No se encontraron resultados.</string>
+    <string name="title_activity_detalles_eventos">DetallesEventos</string>
+    <string name="ubicacion_del_evento">Ubicacion del evento</string>
+    <string name="nombre_del_expositor">Nombre del expositor</string>
+</resources>

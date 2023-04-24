@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/crconf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTheme"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tilDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tema del Evento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilTheme">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha del evento"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/tilExposer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/nombre_del_expositor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tilDate"
+        app:layout_constraintTop_toBottomOf="@+id/tilDate" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilStatus"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="11dp"
+        android:hint="Elige un estado"
+        app:layout_constraintEnd_toEndOf="@+id/tilExposer"
+        app:layout_constraintStart_toStartOf="@+id/tilExposer"
+        app:layout_constraintTop_toBottomOf="@+id/tilExposer">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="303dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilUbicacion" />
+
+    <ImageView
+        android:id="@+id/imgPemisoGps"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:src="@android:drawable/ic_menu_mylocation"
+        app:layout_constraintBottom_toBottomOf="@+id/tilUbicacion"
+        app:layout_constraintEnd_toEndOf="@+id/tilStatus"
+        app:layout_constraintStart_toEndOf="@+id/tilUbicacion"
+        app:layout_constraintTop_toTopOf="@+id/tilUbicacion" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUbicacion"
+        android:layout_width="343dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tilStatus"
+        app:layout_constraintTop_toBottomOf="@+id/tilStatus">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/ubicacion_del_evento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

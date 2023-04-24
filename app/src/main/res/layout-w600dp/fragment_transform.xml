@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ListaEventos.TransformFragment">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="207dp"
+        android:layout_height="186dp"
+        android:contentDescription="@string/no_existen_eventos_creados"
+        android:src="@drawable/baseline_event_busy_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerviewTransform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerviewTransform"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <TextView
+        android:id="@+id/tvprecaucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/precaucion_msg"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerviewTransform"
+        app:layout_constraintEnd_toEndOf="@+id/imagen"
+        app:layout_constraintStart_toStartOf="@+id/imagen"
+        app:layout_constraintTop_toBottomOf="@+id/imagen"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewTransform"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/svSearch"
+        app:spanCount="4" />
+
+    <SearchView
+        android:id="@+id/svSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Busca lo que quieres..."
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="59dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
